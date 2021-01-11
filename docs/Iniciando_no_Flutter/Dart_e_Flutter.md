@@ -31,16 +31,15 @@ class Objeto {
     String cor;
 
     // construtor da classe
-    Objeto(this.nome, this.tamanho, this.cor);
+    Objeto({this.nome, this.tamanho, this.cor});
 }
 
 void main() {
-    var total = 10;
-    Objeto caneca = Objeto();
-    caneca.nome = 'Caneca';
-    caneca.tamanho = 7;
-    caneca.cor = 'Verde';
-
+    Objeto caneca = Objeto(
+        nome: 'Caneca',
+        tamanho: 7,
+        cor: 'Verde',
+    );
     print(caneca.cor); // -> Verde
 }
 ```
