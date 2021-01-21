@@ -45,10 +45,8 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Widgets](docs/Iniciando_no_Flutter/Widgets/widgets.md)
 
   - [A importância da Programação Orientada a Objetos no Flutter](docs/Iniciando_no_Flutter/Widgets/a_importancia_da_programacao_orientada_a_objetos_no_flutter.md)
-  - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
   - [Stateless & Stateful Widgets](docs/Iniciando_no_Flutter/Widgets/stateless_e_stateful_widgets.md)
-  - [Como funcionam os widgets](docs/Iniciando_no_Flutter/Widgets/como_funcionam_os_widgets.md)
-  - [Criação de Widgets](docs/Widgets/Iniciando_no_Flutter/criacao_de_widgets.md)
+  - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
 
 - [Gerência de Estado]()
   - [O setState( ) e o estado de um Widget]()
@@ -65,6 +63,10 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Contribuir para o Flutter]()
 - [Flutter no Brasil]()
+
+### Extra
+
+- [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
 
 <!-- CONTRIBUTING -->
 
