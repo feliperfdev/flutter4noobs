@@ -47,8 +47,9 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [A importância da Programação Orientada a Objetos no Flutter](docs/Iniciando_no_Flutter/Widgets/a_importancia_da_programacao_orientada_a_objetos_no_flutter.md)
   - [Stateless & Stateful Widgets](docs/Iniciando_no_Flutter/Widgets/stateless_e_stateful_widgets.md)
   - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
+  - [O que é o CupertinoApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_cupertino_app.md)
 
-- [Gerência de Estado]()
+- [Gerênciamento de Estado]()
   - [O setState( ) e o estado de um Widget]()
 - [Navegação]()
   - [Formas de navegar entre páginas no Flutter]()
@@ -67,6 +68,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 ### Extra
 
 - [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
+- [Flutter 2]()
 
 <!-- CONTRIBUTING -->
 
@@ -83,7 +85,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Felipe Azevedo Ribeiro** - _Estudante Universitário / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_ia](https://twitter.com/feliper_ia)
+- **Felipe Azevedo Ribeiro** - _Estudante Universitário / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_dev](https://twitter.com/feliper_dev)
 
 ---
 
