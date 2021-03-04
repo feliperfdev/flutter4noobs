@@ -51,12 +51,14 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
-- [Navegação]()
+- [Navegação]() `TODO`
   - [Formas de navegar entre páginas no Flutter]()
   - [Navegação dinâmica]()
-- [Controllers]()
+- [Controllers]() `TODO`
 
 ### Conhecendo alguns widgets
+
+`TODO`
 
 - [Widgets mais comuns]()
 
@@ -85,7 +87,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Felipe Azevedo Ribeiro** - _Estudante Universitário / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_dev](https://twitter.com/feliper_dev)
+- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_dev](https://twitter.com/feliper_dev)
 
 ---
 
