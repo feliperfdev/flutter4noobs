@@ -14,8 +14,10 @@ import 'package:flutter/services.dart';
 A divisão de import de algum package do Flutter, é organizado no seguinte padrão:
 
 ```dart
-import 'package:<package>/<library>.dart'
+import 'package:<package>/<library>.dart';
 ```
+
+#
 
 ## O famoso [pub.dev](https://pub.dev/)
 
@@ -52,3 +54,7 @@ flutter pub get
 para usar as dependências.
 
 Depois, basta importar o package na aplicação utilizando o import.
+
+## O [pub.green](https://pub.green)
+
+O [pub.green](https://pub.green) tem quase a mesma finalidade que o [pub.dev](https://pub.dev), a diferença é que nele você pode `verificar` se um determinado package é compatível com a versão do Flutter que você está utilizando para algum projeto.
