@@ -49,8 +49,8 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
   - [O que é o CupertinoApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_cupertino_app.md)
 
-- [Gerênciamento de Estado]()
-  - [O setState( ) e o estado de um Widget]()
+- [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
+  - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Navegação]()
   - [Formas de navegar entre páginas no Flutter]()
   - [Navegação dinâmica]()
@@ -63,12 +63,12 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 ### Comunidade
 
 - [Contribuir para o Flutter]()
-- [Flutter no Brasil]()
+- [Flutter no Brasil](docs/Comunidade/flutter_no_brasil.md)
 
 ### Extra
 
 - [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
-- [Flutter 2]()
+- [Flutter 2](docs/Extra/flutter_2.md)
 
 <!-- CONTRIBUTING -->
 
