@@ -18,9 +18,9 @@
     <a href="#ROADMAP"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
-    <a href="link-para-abrir-issue">Report Bug</a>
+    <a href="https://github.com/feliper2002/flutter4noobs/issues">Report Bug</a>
     ·
-    <a href="link-para-abrir-issue">Request Feature</a>
+    <a href="https://github.com/feliper2002/flutter4noobs/issues">Request Feature</a>
   </p>
 </p>
     
