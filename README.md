@@ -64,7 +64,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Comunidade
 
-- [Contribuir para o Flutter]()
+- [Contribuir para o Flutter](docs/Comunidade/contribuir_para_o_flutter.md)
 - [Flutter no Brasil](docs/Comunidade/flutter_no_brasil.md)
 
 ### Extra
