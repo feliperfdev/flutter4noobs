@@ -51,16 +51,29 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
-- [Navegação]() `TODO`
-  - [Formas de navegar entre páginas no Flutter]()
-  - [Navegação dinâmica]()
-- [Controllers]() `TODO`
+- [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
+  - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
+  - [Navegação dinâmica](docs/Iniciando_no_Flutter/Navegacao/navegacao_dinamica.md)
+- [Formulários]() `TODO`
 
-### Conhecendo alguns widgets
-
-`TODO`
+### Avançando mais alguns passos `TODO`
 
 - [Widgets mais comuns]()
+- [ListView, GridView e PageView]()
+- [AppBar e SliverAppBar]()
+- [Responsividade: MediaQuery e LayoutBuilder]()
+- [Funções assíncronas]()
+- [Consumindo e exibindo dados de uma API na tela do nosso app]()
+
+### Animações `TODO`
+
+- [Animações no Flutter]()
+- [AnimatedBuilder]()
+- [AnimatedContainer]()
+
+### Programação Reativa no Flutter
+
+- [MobX]()
 
 ### Comunidade
 
