@@ -3,10 +3,17 @@
 Existem algumas formas de navegar entre as telas de um aplicativo.
 
 <div align='center'>
+    <u>
     <i>
-    Gostaria de abrir um parêntese aqui para que primeiro levemos em consideração uma diferença quanto ao MaterialApp e o CupertinoApp, pois os dois podem apresentar animações de transição diferentes.
+    Gostaria de abrir um parêntese aqui para que primeiro levemos em consideração uma diferença quanto ao MaterialApp e o CupertinoApp, pois os dois podem apresentar animações de transição diferentes. <br/>
+    Irei tratar disso mais adiante nesse artigo.
     </i>
+    </u>
 </div>
+<br/>
+<b>
+    Obs: Fique de olho nos comentários dos códigos ^-^
+<b/>
 
 ---
 
@@ -76,3 +83,67 @@ class SegundaRota extends StatelessWidget {
 ---
 
 ## Navegando entre rotas nomeadas
+
+```dart
+void main() {
+  runApp(MaterialApp(
+    title: 'Rotas Nomeadas',
+    initialRoute: '/',
+    // Por padrão a rota principal do nosso app vem como '/'
+    routes: {
+      '/': (context) => FirstScreen(),
+      '/segunda': (context) => SecondScreen(),
+    },
+  ));
+}
+// routes recebe um Map<String, dynamic> onde as chaves são as rotas (sempre com '/' antes do nome) e os valores são as telas pertencentes àquela rota.
+/*
+Seguindo então esse formato:
+'/nome_rota': (context) => TelaDesejada(),
+
+Com isso, o Flutter já entendente que aquela rota direciona para aquela página.
+*/
+
+
+class PrimeiraTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Primeira tela'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Ir para próxima tela'),
+          onPressed: () {
+            Navigator.pushNamed(context, '/segunda');
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SegundaTela extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Segunda tela"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Voltar!'),
+        ),
+      ),
+    );
+  }
+}
+```
+
+<div align='left'>
+    <img src='../../../assets/nav_3.jpg' height=350/> <img src='../../../assets/nav_4.jpg'height=350/>
+<div/>
