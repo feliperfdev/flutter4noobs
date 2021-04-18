@@ -8,4 +8,3 @@ Vemos em diversos apps do dia-a-dia que, muitas vezes, nada se resume a apenas u
 ## ROADMAP
 
 - [Formas de navegar entre páginas no Flutter](formas_de_navegar_entre_telas.md)
-- [Navegação Dinâmica](navegacao_dinamica.md)

@@ -53,7 +53,6 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
   - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
-  - [Navegação dinâmica](docs/Iniciando_no_Flutter/Navegacao/navegacao_dinamica.md)
 - [Formulários]() `TODO`
 
 ### Avançando mais alguns passos `TODO`
