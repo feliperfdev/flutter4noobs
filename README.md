@@ -55,20 +55,14 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
 - [Formulários]() `TODO`
 
-### Avançando mais alguns passos `TODO`
+### Dando alguns passos `TODO`
 
 - [Widgets mais comuns]()
 - [ListView, GridView e PageView]()
-- [AppBar e SliverAppBar]()
+- [AppBar]()
 - [Responsividade: MediaQuery e LayoutBuilder]()
 - [Funções assíncronas]()
 - [Consumindo e exibindo dados de uma API na tela do nosso app]()
-
-### Animações `TODO`
-
-- [Animações no Flutter]()
-- [AnimatedBuilder]()
-- [AnimatedContainer]()
 
 ### Programação Reativa no Flutter
 
