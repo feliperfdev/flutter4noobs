@@ -57,14 +57,14 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Dando alguns passos `TODO`
 
-- [Widgets mais comuns]()
+- [Widgets mais comuns](docs/Dando_alguns_passos/widgets_mais_comuns.md)
 - [ListView, GridView e PageView]()
 - [AppBar]()
 - [Responsividade: MediaQuery e LayoutBuilder]()
 - [Funções assíncronas]()
 - [Consumindo e exibindo dados de uma API na tela do nosso app]()
 
-### Programação Reativa no Flutter
+### Gerenciamento de Estado: Avançando
 
 - [MobX]()
 

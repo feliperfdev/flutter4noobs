@@ -24,20 +24,25 @@ Exemplo de um Container:
 ```dart
 // OBS: Lembre-se que ao passar o mouse por cima dos atríbutos ou das classes/Widgets, você pode ver os parâmetro que recebe e o tipo de retorno
 
+final estiloTexto = TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+  );
 
 Container(
+    height: 200,
+    width: 200,
     alignment: Aligment.center, // aqui estamos definindo a centralização dos elementos filhos do container
-    child Text('Flutter4Noobs'), // o conteúdo (elementos filhos) do Container é apenas um texto escrito 'Flutter4Noobs'
+    child Text('Flutter4Noobs', style: estiloTexto), // o conteúdo (elementos filhos) do Container é apenas um texto escrito 'Flutter4Noobs'
     decoration: BoxDecoration(
         shape: BoxShape.circle, // formato do container
-        color: Colors.purple,
         gradient: LinearGradient(
-            beggin: Alignment.topRight,
+            begin: Alignment.topRight,
             end: Alignment.bottomLeft
-            colors: [
-                Colors.green,
-                Colors.purple[300],
-            ],
+            colors: <Color>[
+                Color(0xffee0000),
+                Color(0xffeeee00)
+              ],
         ),
     ),
     /*
@@ -48,3 +53,6 @@ Container(
     */
 ),
 ```
+
+<b>Resultado:</b> </br>
+<img src='../../assets/container1.jpg'/>
