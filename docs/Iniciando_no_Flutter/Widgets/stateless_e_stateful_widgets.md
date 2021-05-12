@@ -1,16 +1,16 @@
 # Stateless e Sateful Widgets
 
-No Flutter nossos Widgets apresentam estados. Para ser mais específico: os Widgets podem <i> `extender` </i> (herdar) classes que determinam se eles podem ou não mudar de estado.
+No Flutter, nossos Widgets apresentam estados. Para ser mais específico: os Widgets podem <i> `extender` </i> (herdar) classes que determinam se eles podem ou não mudar de estado.
 
 ## Stateless Widegts
 
-Widgets que extendem o que chamamos de StatelessWidget nunca mudam o seu estado.
+Classes que extendem o que chamamos de StatelessWidget nunca mudam o seu estado.
 
 Por exemplo: Widgets como Text e Icon, seus estados nunca mudam. Eles são chamados como StatelessWidgets por não possuirem nenhum estado.
 
 ## Stateful Widegts
 
-Widgets que extendem um StatefulWidgets possuem alteração em seu estado (alguma mudança ocorre) sempre que um usuário interage com ele.
+Classes que extendem um StatefulWidgets possuem alteração em seu estado (alguma mudança ocorre) sempre que um usuário interage com ele.
 Por exemplo: Widgets como TextField, CheckBox, etc.
 
 Quando extendemos um StatefulWidget, nós geramos, na verdade, duas classes:
@@ -101,3 +101,10 @@ Enfim, o resultado da combinação desses códigos:
 width=200>
 
 Sim, parece muito verboso o código. Mas no próprio VSCode possuímos extensões que facilitam a nossa vida na hora da criação desses Widgets. É só ir para o artigo [Dicas de Flutter para usuários do VSCode](../../../docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
+
+Apesar de toda essa verbosidade, essas extensões irão ajudar MUITO! Exemplos:
+
+Ao digitarmos `stl`, irá aparecer automaticamente um atalho no editor para implementar a estrutura de um `StatelessWidget`. E se digitarmos `stf`, iremos implementar a estrutura de um `StatefulWidget`!
+
+<img src='../../../assets/stateless.jpg' width=400 height=190>
+<img src='../../../assets/stateful.jpg' width=400 height=190>

@@ -55,7 +55,10 @@ void comprarAlgo() {
 
 No Flutter trabalhamos com `Widgets` para componentizar nossa aplicação. Costuma-se dizer que <i> tudo </i> no Flutter é Widget.
 
-Mas qual a relação dos Widgets com Orientação a Objetos? A resposta é simples: Os Widgets são Classes! Então quando queremos representar em nossa aplicação um cartão, por exemplo, contendo informações de alguém ou alguma coisa, costuma-se criar um Widget para representar o cartão.
+Mas qual a relação dos Widgets com Orientação a Objetos? A resposta é simples: `Os Widgets são Classes!` Ou melhor: As classes `HERDAM` Widgets, assumindo assim as suas características.
+<br/>
+<br/>
+Então quando queremos representar em nossa aplicação um cartão, por exemplo, contendo informações de alguém ou alguma coisa, costuma-se criar uma classe para representar o 'escopo' do cartão.
 
 Como no Flutter utilizamos a línguagem Dart, seguiremos com a mesma sintaxe do exemplo anterior:
 
@@ -70,6 +73,6 @@ class Cartao {
 }
 ```
 
-Nesse caso, criamos apenas uma classe que representaria as informações desse cartão. Mas e se caso você quisesse exibí-lo na tela de sua aplicação?
+Nesse caso, criamos apenas uma classe que define os tipos de informações que esse cartão pode conter. Mas e se caso você quisesse exibí-lo na tela de sua aplicação?
 
-Podemos criar um modelo para exibir as informações do cartão. Para isso, trabalharíamos com Widgets que possuem estados. Sim! Widgets que possuem estados! Ou, como chamados em Flutter: [Stateless e Stateful Widgets](stateless_e_stateful_widgets.md)
+Podemos criar um modelo para exibir as informações do cartão. Para isso, trabalharíamos com Widgets. Sim! Os Widgets podem alterar o estado de variáveis e até de Widgets! Por isso eles são utilizados quando queremos criar coisas visuais dentro de nossa aplicação! Coloque isso em mente: Widgets podem ou não possuir um estado e também podem alterar estados! Ou, como chamados em Flutter, esses são os [Stateless e Stateful Widgets](stateless_e_stateful_widgets.md)
