@@ -63,8 +63,6 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [ListView, GridView e PageView]()
 - [AppBar]()
 - [Responsividade: MediaQuery e LayoutBuilder]()
-- [Funções assíncronas]()
-- [Consumindo e exibindo dados de uma API na tela do nosso app]()
 
 ### Comunidade
 
