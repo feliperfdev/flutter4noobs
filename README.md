@@ -53,7 +53,9 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
   - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
-- [Campos de texto]() `TODO`
+- [Campos de texto](docs/Iniciando_no_Flutter/Campos_de_texto/campos_de_texto.md)
+  - [TextField](docs/Iniciando_no_Flutter/Campos_de_texto/textfield.md)
+  - [TextFormField](docs/Iniciando_no_Flutter/Campos_de_texto/textformfield.md)
 
 ### Dando alguns passos `TODO`
 
@@ -63,10 +65,6 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Responsividade: MediaQuery e LayoutBuilder]()
 - [Funções assíncronas]()
 - [Consumindo e exibindo dados de uma API na tela do nosso app]()
-
-### Gerenciamento de Estado: Avançando
-
-- [MobX]()
 
 ### Comunidade
 
