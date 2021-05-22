@@ -7,7 +7,10 @@ Então, para criarmos um Widget desse tipo, criamos uma classe e colocamos ela p
 
 <br>
 
-A partir disso, chamamos a própria classe utilizando o construtor da <b>classe herdada</b> através de um `super()`. Esse super trará todos os atríbutos contidos na classe `PreferredSize` para utilizarmos e criarmos nossa AppBar da forma que quisermos!
+A partir disso, chamamos a própria classe utilizando o construtor da <b>classe herdada</b> através de um `super()`. Esse super trará todos os atríbutos contidos na classe `PreferredSize` para utilizarmos e criarmos nossa AppBar da forma que quisermos!<br>
+Com isso, podemos acessar o atríbuto `preferredSize`, onde definimos, através da classe `Size` a altura OU a largura da nossa AppBar utilizando os métodos `fromHeight()` e `fromWidth()`.
+
+Pronto, agora é só utilizar o atríbuto `child` para criar a sua AppBar da forma que desejar! :)
 
 ```dart
 class CustomAppBar extends PreferredSize {
