@@ -32,11 +32,11 @@ MAS, antes, precisamos entender três coisas desses Widgets:
 
 > > > Comportamento MainAxis e CrossAxis na Coluna
 
-<img src='../../assets/mccolumn.png'>
+<img src='../../../assets/mccolumn.png'>
 
 > > > Comportamento MainAxis e CrossAxis na Linha
 
-<img src='../../assets/mcrow.png'>
+<img src='../../../assets/mcrow.png'>
 
 <i>OBS: O MainAxisAlignment e o CrossAxisAlignment são atríbutos NÃO obrigatórios</i>
 
@@ -73,7 +73,7 @@ MAS, antes, precisamos entender três coisas desses Widgets:
 ```
 
 <br/>
-<img src='../../assets/column.jpg' height=360>
+<img src='../../../assets/column.jpg' height=360>
 <br/><br/>
 
 `Linha (Row)`
@@ -103,5 +103,5 @@ MAS, antes, precisamos entender três coisas desses Widgets:
 ```
 
 <br/>
-<img src='../../assets/row.jpg' height=360>
+<img src='../../../assets/row.jpg' height=360>
 <br/><br/>

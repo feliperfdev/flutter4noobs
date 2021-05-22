@@ -40,6 +40,9 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Dart e Flutter](docs/Iniciando_no_Flutter/Dart_e_Flutter.md)
 - [Flutter SDK](docs/Iniciando_no_Flutter/Flutter_SDK.md)
+  - [Instalando e Configurando - Windows]()
+  - [Instalando e Configurando - Mac]()
+  - [Instalando e Configurando - Linux]()
 - [Material Design - Google](docs/Iniciando_no_Flutter/Material_Design.md)
 
 - [Widgets](docs/Iniciando_no_Flutter/Widgets/widgets.md)
@@ -59,13 +62,15 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Dando alguns passos
 
-- [Widgets mais comuns](docs/Dando_alguns_passos/widgets_mais_comuns.md)
-  - [Container](docs/Dando_alguns_passos/container.md)
-  - [Column & Row](docs/Dando_alguns_passos/column_row.md)
-  - [AvatarCircle](docs/Dando_alguns_passos/avatar_circle.md) `TODO`
-  - [Icon](docs/Dando_alguns_passos/icon.md) `TODO`
+- [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
+  - [Container](docs/Dando_alguns_passos/widgets/container.md)
+  - [Column & Row](docs/Dando_alguns_passos/widgets/column_row.md)
+  - [AvatarCircle](docs/Dando_alguns_passos/widgets/avatar_circle.md) `TODO`
+  - [Icon](docs/Dando_alguns_passos/widgets/icon.md) `TODO`
 - [ListView, GridView e PageView]() `TODO`
-- [AppBar]() `TODO`
+- [AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
+  - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
+  - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md)
 - [MediaQuery e LayoutBuilder]() `TODO`
 
 ### Comunidade

@@ -39,4 +39,4 @@ Container(
 ```
 
 <b>Resultado:</b> </br>
-<img src='../../assets/container1.jpg'/>
+<img src='../../../assets/container1.jpg'/>
