@@ -62,7 +62,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets_mais_comuns.md)
 - [ListView, GridView e PageView]()
 - [AppBar]()
-- [Responsividade: MediaQuery e LayoutBuilder]()
+- [MediaQuery e LayoutBuilder]()
 
 ### Comunidade
 
