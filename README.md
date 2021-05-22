@@ -55,14 +55,18 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
 - [Campos de texto](docs/Iniciando_no_Flutter/Campos_de_texto/campos_de_texto.md)
   - [TextField](docs/Iniciando_no_Flutter/Campos_de_texto/textfield.md)
-  - [TextFormField](docs/Iniciando_no_Flutter/Campos_de_texto/textformfield.md)
+  - [TextFormField](docs/Iniciando_no_Flutter/Campos_de_texto/textformfield.md) `TODO`
 
-### Dando alguns passos `TODO`
+### Dando alguns passos
 
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets_mais_comuns.md)
-- [ListView, GridView e PageView]()
-- [AppBar]()
-- [MediaQuery e LayoutBuilder]()
+  - [Container](docs/Dando_alguns_passos/container.md)
+  - [Column & Row](docs/Dando_alguns_passos/column_row.md)
+  - [AvatarCircle](docs/Dando_alguns_passos/avatar_circle.md) `TODO`
+  - [Icon](docs/Dando_alguns_passos/icon.md) `TODO`
+- [ListView, GridView e PageView]() `TODO`
+- [AppBar]() `TODO`
+- [MediaQuery e LayoutBuilder]() `TODO`
 
 ### Comunidade
 
