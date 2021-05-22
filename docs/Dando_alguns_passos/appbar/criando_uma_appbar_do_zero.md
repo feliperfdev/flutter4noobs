@@ -64,5 +64,5 @@ class CustomAppBar extends PreferredSize {
 Por fim, com esse código, teremos um resultado semelhante a esse. Mas, lembre-se, você pode personalizar sua AppBar da forma que desejar, deixando-a do tamanho, formato, comportamento que quiser!
 
 <div align='center'>
-    <img src='../../../assets/appbar_devquiz_felipe.jpg' width=350>
+    <img src='../../../assets/devquiz_appbar.png' width=350>
 </div>
