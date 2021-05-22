@@ -2,7 +2,7 @@
 
 <b>Aviso: Essa AppBar foi retirada de um código já pronto que fiz na NLW #5 - Mas o que importa mesmo está apenas nas 4 primeiras linhas :)</b>
 
-Primeiramente, se você for no atríbuto `appBar` do Scafold em seu projeto, verá que ele recebe um `PreferredSizeWidget`. </br>
+Primeiramente, se você for no atríbuto `appBar` do Scaffold em seu projeto, verá que ele recebe um `PreferredSizeWidget`. </br>
 Então, para criarmos um Widget desse tipo, criamos uma classe e colocamos ela para herdar um `PreferredSize`.
 
 <br>
@@ -69,3 +69,5 @@ Por fim, com esse código, teremos um resultado semelhante a esse. Mas, lembre-s
 <div align='center'>
     <img src='../../../assets/devquiz_appbar.png' width=350>
 </div>
+
+Depois de criar sua AppBar, é só chamar a sua classe no atríbuto de `appBar` do Scaffold em seu projeto.

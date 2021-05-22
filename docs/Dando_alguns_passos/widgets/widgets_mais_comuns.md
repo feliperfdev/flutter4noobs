@@ -17,6 +17,6 @@
 ## ROADMAP
 
 - [Container](container.md)
-- [Icon](icon.md)
 - [Column & Row](column_row.md)
+- [Icon](icon.md)
 - [AvatarCircle](avatar_circle.md)
