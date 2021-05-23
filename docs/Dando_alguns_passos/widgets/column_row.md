@@ -3,7 +3,7 @@
 Uma coisa muito comum nos apps são linhas e colunas.
 
 Por exemplo: Ícones alinhados (como os ícones de reações nas redes sociais).
-<br/><img src='../../assets/row-twitter.jpg' title='Ícones do twitter'> <br/>
+<br/><img src='../../../assets/row-twitter.jpg' title='Ícones do twitter'> <br/>
 Neste caso, provavelmente poderia ter sido feito com uma Row (`linha`), ou com algum componente que permite alinhar os ícones dessa forma.
 
 Mas agora vamos para o código. O que será mostrado são apenas exemplos, nada muito complexo, apenas para o entendimento de como funciona as Columns e as Rows.
