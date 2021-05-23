@@ -74,7 +74,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
   - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
 - [MediaQuery e LayoutBuilder]() `TODO`
-- [Colocando Imagens no Projeto]() `TODO`
+- [Colocando Imagens no Projeto](docs/Dando_alguns_passos/colocando_imagens.md)
 
 ### Comunidade
 
