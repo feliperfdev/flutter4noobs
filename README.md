@@ -51,6 +51,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Stateless & Stateful Widgets](docs/Iniciando_no_Flutter/Widgets/stateless_e_stateful_widgets.md)
   - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
   - [O que é o CupertinoApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_cupertino_app.md)
+  - [Antes de mais nada: O Scaffold](docs/Iniciando_no_Flutter/Widgets/o_scaffold.md) `TODO`
 
 - [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
@@ -70,7 +71,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [ListView, GridView e PageView]() `TODO`
 - [AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
   - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
-  - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md)
+  - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
 - [MediaQuery e LayoutBuilder]() `TODO`
 - [Colocando Imagens no Projeto]() `TODO`
 

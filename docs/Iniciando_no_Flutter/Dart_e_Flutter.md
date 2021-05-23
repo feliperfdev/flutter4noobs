@@ -11,9 +11,9 @@ Aqui não será explicado sobre a línguagem Dart em si. E sim sobre sua utiliza
 
 ## Por quê Dart?
 
-Dart é uma línguagem de programação, orientada a objetos, e foi desenvolvida pela Google por volta de 2010. É uma línguagem com sintaxe semelhante ao C, C++, C#, Java, Javascript, então se você vem de alguma dessas línguagens não terá tanta dificuldade de aprender.
+Dart é uma línguagem de programação que utiliza o paradigma da Programação Orientada a Objetos (POO) e foi desenvolvida pela Google por volta de 2010. É uma línguagem com sintaxe semelhante ao C, C++, C#, Java, Javascript, então se você vem de alguma dessas línguagens não terá tanta dificuldade de aprender.
 
-<strong>Mas qual foi o motivo de terem escolhido Dart para ser a línguagem do Flutter?</strong>
+<b>Mas qual foi o motivo de terem escolhido Dart para ser a línguagem do Flutter?</b>
 A resposta é basicamente pelos motivos de:
 
 - 1 Ser uma línguagem de rápido processamento nas multiplas plataformas
