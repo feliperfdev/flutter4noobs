@@ -116,6 +116,17 @@ ListView.separated(
 
 <b>O GridView `comum`</b>
 
+O GridView, assim como a ListView, possui um `children`, onde pode receber uma lista de Widgets. Porém, a forma de organização de uma GridView é um pouco diferente.
+
+Os Widgets atribuídos ao children são organizados em forma de `grade`.
+
+Além disso, a GridView depende de um atríbuto chamado `gridDelegate` que depende de uma classe chamada `SliverGridDelegate`. Dadas as restrições na grade (informando espaçamento, quantidade de itens por eixo, tamanho...), um SliverGridDelegate calcula o layout de forma igual (baseado no que foi informado no gridDelegate) para cada "bloco" de Widget na grade.
+
+O `gridDelegate` pode receber duas classes do tipo `SliverGridDelegate`:
+
+- `SliverGridDelegateWithFixedCrossAxisCount`, que cria um layout com um número fixo de "blocos" de Widget no eixo transversal.
+- `SliverGridDelegateWithMaxCrossAxisExtent`, que cria um layout com "blocos" de Widget que têm uma extensão máxima do eixo transversal.
+
 ```dart
   List cores = <Color>[
     Colors.red,
