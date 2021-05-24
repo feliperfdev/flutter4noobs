@@ -53,16 +53,10 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [O que é o CupertinoApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_cupertino_app.md)
   - [Antes de mais nada: O Scaffold](docs/Iniciando_no_Flutter/Widgets/o_scaffold.md) `TODO`
 
-- [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
-  - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
-- [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
-  - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
-- [Campos de texto](docs/Iniciando_no_Flutter/Campos_de_texto/campos_de_texto.md)
-  - [TextField](docs/Iniciando_no_Flutter/Campos_de_texto/textfield.md)
-  - [TextFormField](docs/Iniciando_no_Flutter/Campos_de_texto/textformfield.md) `TODO`
-
 ### Dando alguns passos
 
+- [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
+  - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
   - [Container](docs/Dando_alguns_passos/widgets/container.md)
   - [Column & Row](docs/Dando_alguns_passos/widgets/column_row.md)
@@ -75,6 +69,11 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
 - [MediaQuery]() `TODO`
 - [Colocando Imagens no Projeto](docs/Dando_alguns_passos/colocando_imagens.md)
+- [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
+  - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
+- [Campos de texto](docs/Iniciando_no_Flutter/Campos_de_texto/campos_de_texto.md)
+  - [TextField](docs/Iniciando_no_Flutter/Campos_de_texto/textfield.md)
+  - [TextFormField](docs/Iniciando_no_Flutter/Campos_de_texto/textformfield.md) `TODO`
 
 ### Comunidade
 
