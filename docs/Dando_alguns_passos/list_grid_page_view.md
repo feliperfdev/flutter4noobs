@@ -114,4 +114,108 @@ ListView.separated(
 
 # GridView
 
+<b>O GridView `comum`</b>
+
+```dart
+  List cores = <Color>[
+    Colors.red,
+    Colors.green,
+    Colors.blue,
+    Colors.grey,
+    Colors.pink,
+    Colors.yellow,
+    Colors.purple,
+    Colors.amber,
+    Colors.lime,
+    Colors.greenAccent,
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 1.5,
+          ),
+          children: [
+            for (var i = 0; i < 10; i++)
+              Container(
+                height: 60,
+                width: 60,
+                color: cores[i],
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+```
+
+<img src='../../assets/gridview_comum.jpg' height=390>
+
+<br>
+<br>
+
+<b>O GridView `builder`</b>
+
+```dart
+   List<Map<String, dynamic>> dayManagement = [
+     {'dia': 'Segunda', 'status': true},
+     {'dia': 'Terça', 'status': true},
+     {'dia': 'Quarta', 'status': true},
+     {'dia': 'Quinta', 'status': true},
+     {'dia': 'Sexta', 'status': true},
+     {'dia': 'Sábado', 'status': true},
+     {'dia': 'Domingo', 'status': true},
+   ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: GridView.builder(
+        shrinkWrap: true,
+        padding: EdgeInsets.only(bottom: 70),
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: 7,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: .2,
+          childAspectRatio: 2.05,
+        ),
+        itemBuilder: (context, index) => Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text(dayManagement[index]['dia']),
+            dayManagement[index]['dia'].length >= 7
+                ? SizedBox(width: 6)
+                : SizedBox.shrink(),
+            Container(
+              height: 24,
+              width: 42,
+              child: CupertinoSwitch(
+                  activeColor: Colors.purple,
+                  value: dayManagement[index]['status'],
+                  onChanged: (value) {
+                    setState(() {
+                      dayManagement[index]['status'] = value;
+                    });
+                  },
+                )
+            ),
+          ],
+        ),
+    ),
+      ),
+    );
+  }
+```
+
+<img src='../../assets/gridview.jpg' height=390>
+
+<br>
+<br>
+
 # PageView
