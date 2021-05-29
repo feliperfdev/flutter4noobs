@@ -60,7 +60,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
   - [Container](docs/Dando_alguns_passos/widgets/container.md)
   - [Column & Row](docs/Dando_alguns_passos/widgets/column_row.md)
-  - [Stack](docs/Dando_alguns_pasos/widgets/stack.md)
+  - [Stack](docs/Dando_alguns_passos/widgets/stack.md)
   - [Icon e IconButton](docs/Dando_alguns_passos/widgets/icon_e_icon_button.md)
   - [CircleAvatar](docs/Dando_alguns_passos/widgets/circle_avatar.md)
 - [ListView, GridView e PageView](docs/Dando_alguns_passos/list_grid_page_view.md) `TODO`
