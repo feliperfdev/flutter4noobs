@@ -40,7 +40,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Dart e Flutter](docs/Iniciando_no_Flutter/Dart_e_Flutter.md)
 - [Flutter SDK](docs/Iniciando_no_Flutter/Flutter_SDK.md)
-  - [Instalando e Configurando - Windows]() `TODO`
+  - [Instalando e Configurando - Windows](docs/Iniciando_no_Flutter/Instalacao/windows.md)
   - [Instalando e Configurando - Mac]() `TODO`
   - [Instalando e Configurando - Linux]() `TODO`
 - [Material Design - Google](docs/Iniciando_no_Flutter/Material_Design.md)
