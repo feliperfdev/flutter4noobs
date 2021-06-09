@@ -147,8 +147,8 @@ O `gridDelegate` pode receber duas classes do tipo `SliverGridDelegate`:
       body: Center(
         child: GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 1.5,
+            crossAxisCount: 2, // Aqui determinamos a quantidade de colunas queremos na nossa grade
+            childAspectRatio: 1.5, // Aqui estamos dando uma proporção de tamanho para cada filho que vai ser gerado
           ),
           children: [
             for (var i = 0; i < 10; i++)
@@ -170,6 +170,12 @@ O `gridDelegate` pode receber duas classes do tipo `SliverGridDelegate`:
 <br>
 
 <b>O GridView `builder`</b>
+
+Assim como o `ListView`, o GridView também possui o método `builder`. Sua função, então, é similar. Como já foi explicado, a diferença do GridView para o ListView está em seu <b>comportamento</b>!
+
+Então, se no GridView comum podemos passar vários Widgets para uma lista, o já conhecido atributo `children`, sabemos que o atributo `itemBuilder` facilita a nossa vida nesse quesito! Pois permite gerarmos a `Grid` que queremos apenas informando como queremos que ela seja construída. É como um `.map()`: você informa como quer que cada objeto na grade seja construído e ele mapeia pela grade inteira baseada no tipo de conteúdo que está sendo utilizado para isso `(ex: uma List, um Map<>...)`.
+
+E, assim como no `ListView.builder`, o atributo `itemBuilder` também é uma `Function(BuildContext context, int index)`.
 
 ```dart
    List<Map<String, dynamic>> dayManagement = [
@@ -196,6 +202,7 @@ O `gridDelegate` pode receber duas classes do tipo `SliverGridDelegate`:
           crossAxisSpacing: .2,
           childAspectRatio: 2.05,
         ),
+        // No itemBuilder, eu informo como quero que cada "bloco" da minha grade seja construído.
         itemBuilder: (context, index) => Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -218,6 +225,7 @@ O `gridDelegate` pode receber duas classes do tipo `SliverGridDelegate`:
             ),
           ],
         ),
+        // Resumindo, é como se eu estivesse dizendo que quero que CADA bloco/divisão da minha grade seja uma linha (Row) que possui um texto (Text) e um Switch (CupertinoSwitch). Aí, para exibição das informações, utilizei a lista criada anteriormente e fui mapeando usufruindo do index fornecido pelo itemBuilder.
     ),
       ),
     );
