@@ -238,3 +238,148 @@ E, assim como no `ListView.builder`, o atributo `itemBuilder` também é uma `Fu
 <br>
 
 # PageView
+
+Bom, assim como ListView e o GridView, o `PageView` também tem seu tipo de comportamento e sua devida utilidade. E, para ser sincero, é a mais diferenciada entre os Widgets citados anteriormente.
+
+Basicamente, o PageView trabalha com páginas! Podemos utilizar Widgets ou telas mais estruturadas e colocarmos num PageView, associá-lo a algum `controller` e manipular a passagem das páginas com uma `TopBar`, `BottomBar` ou qualquer outra coisa caso queira usar a criatividade.
+
+<p align='center'>
+  <b>
+    <i>
+      O código abaixo possui um nível de complexidade `um pouquinho` só mais elevado que os vistos anteriormente. Porém, se trata mais de costumização do que a estrutura que veremos aqui.
+      <p>
+      O foco mesmo está no controle e implementação da PageView.
+    </i>
+  </b>
+</p>
+
+```dart
+Widget build(BuildContext context) {
+    int? pageIndex = 0; // variável dos índices das páginas
+
+    final _pageController = PageController(initialPage: 0);
+    // controller das páginas
+
+    List<bool> _selections = [true, false, false]; // lista de bool para mapeamento dos botões
+
+    List<Color> _cores = [Colors.red, Colors.green, Colors.blue];
+
+    return Scaffold(
+      body: Column(
+        // Essa Column vai ser importante. Não para o PageView em si, pelo menos não diretamente. Mas sim para um conceito que será explicado no próximo tópico. >>> [Bônus] <<<
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          IntrinsicWidth(
+            // Toda essa estrutura cria o Widget que irá auxiliar na navegação do PageView
+            child: Container(
+              margin: const EdgeInsets.only(top: 70),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: ToggleButtons(
+                children: <Widget>[
+                  // Aqui cada um dos Widgets da lista é um conteúdo de botão. Ou seja: Cada Widget cria um novo botão com esse conteúdo
+                  Text('R'),
+                  Text('G'),
+                  Text('B'),
+                ],
+                borderRadius: BorderRadius.circular(8),
+                constraints: BoxConstraints(minWidth: 70, minHeight: 40),
+                disabledColor: Colors.white,
+                selectedColor: Colors.white,
+                borderColor: Colors.transparent,
+                fillColor: _cores[pageIndex],
+                onPressed: (int index) {
+                  // condições para mudar o íncide da página ao clicar em um dos botões
+                  if (pageIndex == index) {
+                    setState(() {
+                      _selections[index] = true;
+                    });
+                  } else{
+                    setState(() {
+                      _selections[index] = false;
+                    });
+                  }
+                  _pageController.animateToPage(index,
+                      duration: Duration(milliseconds: 400),
+                      curve: Curves.easeInOut);
+                },
+                isSelected: _selections,
+              ),
+            ),
+          ),
+          SizedBox(height: 16),
+          Expanded(
+            child: // Lembre-se de colocar o PageView dentro de um Expanded
+          ),
+        ],
+      ),
+    );
+}
+```
+
+Agora vamos para o PageView:
+
+```dart
+PageView(
+  controller: _pageController,
+  physics: NeverScrollableScrollPhysics(), // Nunca [scrollar] utilizando o mouse/dedo para o lado
+  onPageChanged: (index) {
+    setState(() {
+      pageIndex = index;
+      // trocando os índices das páginas
+    });
+  },
+  children: [
+    // Página 1 (pageIndex = 0)
+    Center(
+      child: Container(height: 100, width: 100, color: Colors.red),
+    ),
+
+    // Página 2 (pageIndex = 1)
+    Center(
+      child:
+          Container(height: 100, width: 100, color: Colors.green),
+    ),
+
+    // Página 3 (pageIndex = 2)
+    Center(
+      child: Container(height: 100, width: 100, color: Colors.blue),
+    ),
+  ],
+),
+```
+
+Perceba que nós utilizamos uma variável que armazena os índices das páginas. Assim, podemos utilizar funções para alterá-las e trocasmos de página.
+Além disso, o PageView utiliza um `PageController` para poder auxiliar na troca de páginas.
+
+<img src='../../assets/red.jpg' with=200 height=300>
+<img src='../../assets/green.jpg' with=200 height=300>
+<img src='../../assets/blue.jpg' with=200 height=300>
+
+Tá, mas... Por qual motivo colocamos o PageView dentro de um Widget `Expanded`, sendo que não fizemos o mesmo com o `ListView` e o `GridView`?
+
+Bom, isso nos abre espaço para um tópico `bônus`!
+
+# O Expanded em conjunto ao ListView, GridView e PageView
+
+Primeiramente: Não importa o tipo de Widget (se é o List, Grid ou Page), mas sim a situação que estão inseridos.
+
+Se olharmos de novo, veremos que tanto o ListView quanto o GridView estão dentro apenas de um `Center()`. E não há nada de especial no Center a não ser....... centralizar 😃. Esse Widget não trabalha com múltiplos filhos ou com questão de comportamentos de disposição de Widgets na tela.
+
+E o que seria esse algo de `especial` que fez com que precisassemos utilizar o `Expanded` na PageView?
+
+`A Column`!!!
+
+<p align='center'>
+  <img src='../../assets/layout.png' width=450>
+</p>
+
+Não só a Column, mas acho que lendo isso você já consegue associar que também seria necessário caso utilizassemos uma Row no lugar, por exemplo.
+
+Tá... Mas por quê?
+
+Justamente pelo motivo da Column ser um Widget que permite um tamanho `ilimitado`! Você pode colocar infinitos Widgets dentro de uma Column (apesar de que se você fizer isso sem uma ScrollView, sua tela irá quebrar). Então, se colocarmos o List, Grid ou PageView dentro de uma Column, sem `controlar` essa expansão que ela possa vir a ter, poderemos ter um erro na nossa tela.
+
+Esse controle da expansão é feito justamente com um Widget chamado `Expanded`, que expande ao máximo que puder e passa um limite para seu `child`. Assim, podemos usar o tamanho restante da tela e passar um limitador para as Views.

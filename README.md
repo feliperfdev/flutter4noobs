@@ -63,7 +63,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Stack](docs/Dando_alguns_passos/widgets/stack.md)
   - [Icon e IconButton](docs/Dando_alguns_passos/widgets/icon_e_icon_button.md)
   - [CircleAvatar](docs/Dando_alguns_passos/widgets/circle_avatar.md)
-- [ListView, GridView e PageView](docs/Dando_alguns_passos/list_grid_page_view.md) `TODO`
+- [ListView, GridView e PageView](docs/Dando_alguns_passos/list_grid_page_view.md)
 - [AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
   - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
   - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
