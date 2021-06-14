@@ -2,10 +2,10 @@
 
 Você provavelmente já viu em diversos aplicativos algo parecido com... isso:
 
-<img src='../../assets/appbar1.jpg'>
-<img src='../../assets/appbar2.jpg'>
-<img src='../../assets/appbar3.jpg'>
-<img src='../../assets/appbar4.jpg'>
+<img src='../../../assets/appbar1.jpg'>
+<img src='../../../assets/appbar2.jpg'>
+<img src='../../../assets/appbar3.jpg'>
+<img src='../../../assets/appbar4.jpg'>
 
 <br/><br/>
 Chamamos isso de AppBar. Elas podem ser simples, contendo o básico de informações (às vezes o nome do app ou o título da página) ou então informações básicas do usuário (nome, ícone de perfil) e até mesmo ações (pesquisar, filtrar, compartilhar...)
