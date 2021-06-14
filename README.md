@@ -51,7 +51,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Stateless & Stateful Widgets](docs/Iniciando_no_Flutter/Widgets/stateless_e_stateful_widgets.md)
   - [O que é o MaterialApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_material_app.md)
   - [O que é o CupertinoApp](docs/Iniciando_no_Flutter/Widgets/o_que_e_cupertino_app.md)
-  - [Antes de mais nada: O Scaffold](docs/Iniciando_no_Flutter/Widgets/o_scaffold.md) `TODO`
+  - [Antes de mais nada: O Scaffold](docs/Iniciando_no_Flutter/Widgets/o_scaffold.md)
 
 ### Dando alguns passos
 
