@@ -55,7 +55,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Dando alguns passos
 
-- [Gerênciamento de Estado](docs/Iniciando_no_Flutter/Gerencia_de_Estado/gerenciamento_de_estado.md)
+- [Gerênciamento de Estado](docs/Dando_alguns_passos/Gerencia_de_Estado/gerenciamento_de_estado.md)
   - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
   - [Container](docs/Dando_alguns_passos/widgets/container.md)
@@ -64,15 +64,16 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Icon e IconButton](docs/Dando_alguns_passos/widgets/icon_e_icon_button.md)
   - [CircleAvatar](docs/Dando_alguns_passos/widgets/circle_avatar.md)
 - [ListView, GridView e PageView](docs/Dando_alguns_passos/list_grid_page_view.md)
-- [AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
+- [AppBar](docs/Dando_alguns_passos/appbar/appbar_roadMap.md)
+  - [Uma simples AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
   - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
   - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
 - [MediaQuery]() `TODO`
 - [Colocando Imagens no Projeto](docs/Dando_alguns_passos/colocando_imagens.md)
-- [Navegação](docs/Iniciando_no_Flutter/Navegacao/navegacao.md)
-  - [Formas de navegar entre páginas no Flutter](docs/Iniciando_no_Flutter/Navegacao/formas_de_navegar_entre_telas.md)
-- [Campos de texto](docs/Iniciando_no_Flutter/Campos_de_texto/campos_de_texto.md)
-  - [TextField](docs/Iniciando_no_Flutter/Campos_de_texto/textfield.md)
+- [Navegação](docs/Dando_alguns_passos/Navegacao/navegacao.md)
+  - [Formas de navegar entre páginas no Flutter](docs/Dando_alguns_passos/Navegacao/formas_de_navegar_entre_telas.md)
+- [Campos de texto](docs/Dando_alguns_passos/Campos_de_texto/campos_de_texto.md)
+  - [TextField](docs/Dando_alguns_passos/Campos_de_texto/textfield.md)
 
 ### Comunidade
 
