@@ -6,4 +6,5 @@ Neste tópico, iremos tratar de um componente presente em diversos aplicativos. 
 
 ## ROADMAP
 
+- [Uma simples AppBar](appbar.md)
 - [Criando uma AppBar do zero](criando_uma_appbar_do_zero.md)

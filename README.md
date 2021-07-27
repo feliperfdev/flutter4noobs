@@ -42,7 +42,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Flutter SDK](docs/Iniciando_no_Flutter/Flutter_SDK.md)
   - [Instalando e Configurando - Windows](docs/Iniciando_no_Flutter/Instalacao/windows.md)
   - [Instalando e Configurando - Mac](docs/Iniciando_no_Flutter/Instalacao/macos.md)
-  - [Instalando e Configurando - Linux]() `TODO`
+  - [Instalando e Configurando - Linux]() `FUTURAMENTE`
 - [Material Design - Google](docs/Iniciando_no_Flutter/Material_Design.md)
 
 - [Widgets](docs/Iniciando_no_Flutter/Widgets/widgets.md)
@@ -67,8 +67,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [AppBar](docs/Dando_alguns_passos/appbar/appbar_roadMap.md)
   - [Uma simples AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
   - [Criando uma AppBar do Zero](docs/Dando_alguns_passos/appbar/criando_uma_appbar_do_zero.md)
-  - [SliverAppBar](docs/Dando_alguns_passos/appbar/sliver_appbar.md) `TODO`
-- [MediaQuery]() `TODO`
+- [MediaQuery](docs/Dando_alguns_passos/mediaquery/mediaquery.md)
 - [Colocando Imagens no Projeto](docs/Dando_alguns_passos/colocando_imagens.md)
 - [Navegação](docs/Dando_alguns_passos/Navegacao/navegacao.md)
   - [Formas de navegar entre páginas no Flutter](docs/Dando_alguns_passos/Navegacao/formas_de_navegar_entre_telas.md)
