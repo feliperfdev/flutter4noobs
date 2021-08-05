@@ -17,7 +17,7 @@ Container(
     height: 200,
     width: 200,
     alignment: Aligment.center, // aqui estamos definindo a centralização dos elementos filhos do container
-    child Text('Flutter4Noobs', style: estiloTexto), // o conteúdo (elementos filhos) do Container é apenas um texto escrito 'Flutter4Noobs'
+    child: Text('Flutter4Noobs', style: estiloTexto), // o conteúdo (elementos filhos) do Container é apenas um texto escrito 'Flutter4Noobs'
     decoration: BoxDecoration(
         shape: BoxShape.circle, // formato do container
         gradient: LinearGradient(
