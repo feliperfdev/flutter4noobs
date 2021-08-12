@@ -2,13 +2,13 @@
 
 No Flutter, nossos Widgets apresentam estados. Para ser mais específico: os Widgets podem <i> `extender` </i> (herdar) classes que determinam se eles podem ou não mudar de estado.
 
-## Stateless Widegts
+## Stateless Widgets
 
 Classes que extendem o que chamamos de StatelessWidget nunca mudam o seu estado.
 
 Por exemplo: Widgets como Text e Icon, seus estados nunca mudam. Eles são chamados como StatelessWidgets por não possuirem nenhum estado.
 
-## Stateful Widegts
+## Stateful Widgets
 
 Classes que extendem um StatefulWidgets possuem alteração em seu estado (alguma mudança ocorre) sempre que um usuário interage com ele.
 Por exemplo: Widgets como TextField, CheckBox, etc.
