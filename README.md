@@ -56,7 +56,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 ### Dando alguns passos
 
 - [Gerênciamento de Estado](docs/Dando_alguns_passos/Gerencia_de_Estado/gerenciamento_de_estado.md)
-  - [O setState( ) e o estado de um Widget](docs/Iniciando_no_Flutter/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
+  - [O setState( ) e o estado de um Widget](docs/Dando_alguns_passos/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
   - [Container](docs/Dando_alguns_passos/widgets/container.md)
   - [Column & Row](docs/Dando_alguns_passos/widgets/column_row.md)
