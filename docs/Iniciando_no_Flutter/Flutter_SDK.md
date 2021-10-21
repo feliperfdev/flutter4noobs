@@ -1,6 +1,6 @@
 # Flutter SDK
 
-Flutter é um SDK desenvolvido pela Google com a proposta de criar aplicações rápidas e bonitas para mobile, desktop e web a partir de uma única `codebase`. É totalmente gratuída, `open source` e usada por desenvolvedores e empresas do mundo todo.
+Flutter é um SDK desenvolvido pela Google com a proposta de criar aplicações rápidas e bonitas para mobile, desktop e web a partir de uma única `codebase`. É totalmente gratuita, `open source` e usada por desenvolvedores e empresas do mundo todo.
 
 Se tiver interesse em se aprofundar mais na documentação do Flutter: [flutter.dev](https://flutter.dev/)
 
