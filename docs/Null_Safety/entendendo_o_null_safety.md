@@ -1,0 +1,35 @@
+# Entendendo o Null Safety
+
+<p align='center'>
+<img src='../../assets/nullsafety.png' height=280>
+<p/>
+
+
+
+## Dart 2.12
+
+A versão 2.12 do Dart trouxe uma novidade incrível para a línguagem: o `Null Safety`. Uma feature que veio para fortalecer o sistema de tipagens do Dart e facilitar a captura de erros por valores nulos, que é um dos principais motivos de *crashes* causados em aplicativos durante o desenvolvimento.
+
+```dart
+String? nome;
+
+int? idade;
+
+print(nome) // -> null
+
+bool temIdade = idade ?? 0;
+```
+
+## Valores Nullable e Non Nullable
+
+Com o Null Safety, o Dart ganhou dois novos operadores: o `?` e o `!`. Mais para frente veremos a diferença entre o `?` e o `??`.
+A questão é: para que servem e como devem ser utilizados?
+
+## Inicialização tardia: **late**
+
+---
+### Créditos
+
+https://dev.to/rrafush/entendendo-o-null-safety-437k
+https://medium.com/dartlang/announcing-dart-2-12-499a6e689c87
+https://www.alura.com.br/artigos/flutter-null-safety
