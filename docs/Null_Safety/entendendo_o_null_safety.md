@@ -25,11 +25,8 @@ bool temIdade = idade ?? 0;
 Com o Null Safety, o Dart ganhou dois novos operadores: o `?` e o `!`. Mais para frente veremos a diferença entre o `?` e o `??`.
 A questão é: para que servem e como devem ser utilizados?
 
+Primeiramente vamos precisar entender o que acontece quando migramos finalmente para o Null Safety. A partir de agora, **o sistema de declaração de variáveis muda e o padrão dos tipos é `Non-Nullable` (não nulos)**. 
+
 ## Inicialização tardia: **late**
 
 ---
-### Créditos
-
-https://dev.to/rrafush/entendendo-o-null-safety-437k
-https://medium.com/dartlang/announcing-dart-2-12-499a6e689c87
-https://www.alura.com.br/artigos/flutter-null-safety
