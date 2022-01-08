@@ -88,6 +88,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
 - [Flutter 2](docs/Extra/flutter_2.md)
+- [Flutter - Roadmap Flutterando](https://github.com/Flutterando/roadmap)
 
 <!-- CONTRIBUTING -->
 
