@@ -10,9 +10,11 @@
 
 A versão 2.12 do Dart trouxe uma novidade incrível para a línguagem: o `Null Safety`. Uma feature que veio para fortalecer o sistema de tipagens do Dart e facilitar a captura de erros por valores nulos, que é um dos principais motivos de *crashes* causados em aplicativos durante o desenvolvimento.
 
+[Migrando um projeto para o Null Safety](docs/Null_Safety/migrando_null_safety.md)
+
 ## Valores Nullable e Non-Nullable
 
-Com o Null Safety, o Dart ganhou dois novos operadores: o `?` e o `!`. Mais para frente veremos a diferença entre o `?` e o `??`.
+Com o Null Safety, o Dart ganhou novos operadores: o `?`, `??` e o `!`.
 A questão é: para que servem e como devem ser utilizados?
 
 Primeiramente vamos precisar entender o que acontece quando migramos finalmente para o Null Safety. A partir de agora, **o sistema de declaração de variáveis muda e o padrão dos tipos é `Non-Nullable` (não nulos)**.  Ou seja, por padrão, não poderemos mais ter variáveis nulas, pelo menos não da forma como conheciamos.
@@ -81,7 +83,7 @@ Situação diferente para o Pokémon **Greninja**, que não possui evolução. L
 
 ## Trabalhando com o operador **`!`**
 
-Utilizamos esse operador quando temos a certeza de que alguma variável ou atributo de classe que PODE ser nulo(a) possui um valor não nulo.
+Utilizamos esse operador quando temos a certeza de que alguma variável ou atributo de classe que PODE ser nulo(a) **possui um valor não nulo**.
 
 Vamos utilizar um pokémon dos exemplos acima:
 
@@ -103,6 +105,8 @@ String printPikachuInfo() {
 ```
 
 Perceba o operador `!` em **`pikachu.evolution!`**. Isso devido ao fato de sabermos que o atributo `evolution` da variável `pikachu`, que é um atributo que pode ser nulo, possui um valor não nulo.
+
+É comum o Dart exibir avisos na sua IDE para alertar em relação ao uso do operador `!`. Se vier um valor nulo em algum lugar que esteja utilizando este operador, você pode receber o erro de ***null check operator used on a null value***. Por tanto, é preciso ter certeza de que não está recebendo nenhum valor nulo na variável que esteja acompanhada do operador `!`.
 
 ## Utilizando o operador **`??`**
 
@@ -133,8 +137,8 @@ No exemplo acima, estamos informando que caso o getter `image` da variável `pok
 O `late` é um modificador que permite que o valor de uma variável, inicialmente, seja NULO (`Nullable`).
 
 ```dart
-late TaskController controller;
-/// A variável `controller` da classe [TaskController] está sendo considerada, inicialmente, nula.
+late TaskRepository repository;
+/// A variável `repository` da classe [TaskRepository] está sendo considerada, inicialmente, nula.
 ///
 ```
 

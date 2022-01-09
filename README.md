@@ -76,7 +76,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Null Safety
 
-- [Migrando um projeto para o Null Safety]()
+- [Migrando um projeto para o Null Safety](docs/Null_Safety/migrando_null_safety.md)
 - [Entendendo o Null Safety](docs/Null_Safety/entendendo_o_null_safety.md)
 - [Aplicando o Null Safety no Flutter](docs/Null_Safety/aplicando_null_safety_no_flutter.md)
 
