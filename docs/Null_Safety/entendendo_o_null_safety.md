@@ -40,6 +40,14 @@ void setUserSettings(Settings settings) {
 
 ## Utilizando o `required`
 
+Na criação de classes no Dart devemos também pensar um pouco além em algumas situações. Por exemplo: "O que pode ser nulo?", "O que não pode ser nulo?", "O que é obrigatório que todo objeto dessa classe tenha?". Esses são pensamentos que provavelmente sempre tivemos, mas agora temos formas melhores de trabalharmos com eles.
+
+Como sou muito fã de Pokémon, irei utilizar a classe `Pokemon` como exemplo.
+
+Um pokémon possui um número/id da pokédex (`dexNum`), um nome (`name`) e **pode ou não** ter uma evolução (`evolution`). Ou seja, `dexNum` e `name` serão necessariamente atributos OBRIGATÓRIOS para essa classe, enquanto `evolution` poderá ser **Nullable** já que podem existir Pokémon sem alguma evolução. Logo, para algum Pokémon, esse atributo só deixará de ser nulo se o mesmo possuir evolução.
+
+Como sabemos que `dexNum` e `name` são atributos obrigatórios, utilizamos no construtor da nossa classe a palavra reservada **`required`** para definirmos que estes são obrigatórios na criação de um objeto da classe `Pokemon`.
+
 ```dart
 class Pokemon {
     final int dexNum;
@@ -53,6 +61,23 @@ class Pokemon {
     });
 }
 ```
+
+```dart
+final pikachu = Pokemon(
+    dexNum: 25,
+    name: "Pikachu",
+    evolution: "Raichu",
+);
+
+final greninja = Pokemon(
+    dexNum: 658,
+    name: "Greninja",
+);
+```
+
+No exemplo acima, o Pokémon **Pikachu** possui evolução, por isso o atributo `evolution` é preenchido com o nome de sua evolução.
+
+Situação diferente para o Pokémon **Greninja**, que não possui evolução. Logo, o atributo de `evolution` para ele permanece nulo.
 
 ## Trabalhando com o operador '!'
 
