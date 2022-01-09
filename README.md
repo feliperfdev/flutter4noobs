@@ -74,6 +74,12 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Campos de texto](docs/Dando_alguns_passos/Campos_de_texto/campos_de_texto.md)
   - [TextField](docs/Dando_alguns_passos/Campos_de_texto/textfield.md)
 
+### Null Safety
+
+- [Migrando um projeto para o Null Safety]()
+- [Entendendo o Null Safety](docs/Null_Safety/entendendo_o_null_safety.md)
+- [Aplicando o Null Safety no Flutter](docs/Null_Safety/aplicando_null_safety_no_flutter.md)
+
 ### Comunidade
 
 - [Contribuir para o Flutter](docs/Comunidade/contribuir_para_o_flutter.md)
@@ -83,6 +89,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 - [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
 - [Flutter 2](docs/Extra/flutter_2.md)
+- [Flutter - Roadmap Flutterando](https://github.com/Flutterando/roadmap)
 
 <!-- CONTRIBUTING -->
 
@@ -99,7 +106,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_dev](https://twitter.com/feliper_dev)
+- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter / Desenvolvedor Flutter na F-Team_ - [@feliper_dev](https://twitter.com/feliper_dev)
 
 ---
 
