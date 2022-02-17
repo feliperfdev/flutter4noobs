@@ -1,4 +1,4 @@
-# Flutter 2.0
+# Flutter 2.0 - Março de 2021
 
 No dia 03 de Março aconteceu um dos eventos mais esperados pela comunidade do Flutter. O [Flutter Engage](https://www.youtube.com/watch?v=yll3SNXvQCw), onde foi anunciada a nova release da versão estável do Flutter, além de muitas outras novidades.
 
@@ -29,3 +29,15 @@ Principais novidades:
 - Os aplicativos agora devem inicializar mais rápido e consumir menos memória ao atualizarmos para o `Flutter 2.8`.
 - Novo widget de **sign-in** que utiliza `Firebase` para autenticação.
 - Release do `Flame 1.0`, uma engine do Flutter para **criação de jogos 2D**.
+
+# Flutter 2.10 - Fevereiro de 2022
+
+<img src='https://miro.medium.com/max/1400/0*278rYAB5Pac8_7SD'>
+
+[Todas as novidades do Flutter 2.10](https://medium.com/flutter/whats-new-in-flutter-2-10-5aafb0314b12)
+
+Principais novidades:
+
+- Início da transição para o `Material 3`
+- Flutter Desktop (**Windows**) pronto para ser utilizado em `produção`
+- Melhorias na performance
