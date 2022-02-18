@@ -1,5 +1,10 @@
 # TextField
 
+Sabe quando vemos em aplicativos alguns campos de texto em que podemos colocar nomes, e-mails, senhas e demais informações? Até mesmo quando queremos escrever algo que tenha uma quantidade maior de linhas?
+Pois bem, esses são os famosos `inputs` (digamos que esse seria um nome "global"). No Flutter, chamamos esses inputs de `TextField`!
+
+Nele podemos definir diversos valores como valor/texto inicial, labels, hints, número de linhas, número de caracteres e também podemos decorá-lo com a classe `InputDecoration` para deixar a cara do seu app. Além de podermos associá-lo a um controller (`TextEditingController`) que nos permite manipular o texto inserido no TextField.
+
 <br/>
 <div align='center'>
     <i>
@@ -67,6 +72,6 @@ Para isso, podemos utilizar o atríbuto onChanged, que recebe uma String que est
 <br/>
 
 `DICA!! :)` <br/>
-Às vezes quando queremos colocar um valor inicial nos inputs (geralmente quando buscamos dados de alguma API ou então quando já vem por padrão do app), é uma ótima ideia usarmos o controller para isso!
+Às vezes quando queremos colocar um valor inicial nos inputs (geralmente quando buscamos dados de alguma API ou então quando já vem por padrão do app), é uma ótima ideia usarmos um atributo do TextField chamado de `initialValue` para isso!
 
-Pense bem: Tendo um valor pré-definido para o controller.text e depois associá-lo ao onChanged irá facilitar a manipulação do conteúdo do TextField. Afinal, quando estivermos modificando-o, o controller.text já vai ser atualizado com o novo conteúdo que é passado pela String do onChaned.
+Pense bem: Tendo um valor pré-definido e depois associá-lo ao onChanged irá facilitar a manipulação do conteúdo do TextField. Afinal, quando estivermos modificando-o, o initialValue já vai ser atualizado com o novo conteúdo que é passado pela String do onChaned.
