@@ -76,7 +76,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 
 ### Null Safety
 
-- [Migrando um projeto para o Null Safety]()
+- [Migrando um projeto para o Null Safety](docs/Null_Safety/migrando_null_safety.md)
 - [Entendendo o Null Safety](docs/Null_Safety/entendendo_o_null_safety.md)
 - [Aplicando o Null Safety no Flutter](docs/Null_Safety/aplicando_null_safety_no_flutter.md)
 
@@ -88,8 +88,9 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 ### Extra
 
 - [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
-- [Flutter 2](docs/Extra/flutter_2.md)
+- [Flutter 2.X](docs/Extra/flutter_2.md)
 - [Flutter - Roadmap Flutterando](https://github.com/Flutterando/roadmap)
+- [Dart/Flutter - Clean Architecture](https://github.com/Flutterando/Clean-Dart)
 
 <!-- CONTRIBUTING -->
 
@@ -106,7 +107,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter / Desenvolvedor Flutter na F-Team_ - [@feliper_dev](https://twitter.com/feliper_dev)
+- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter / Desenvolvedor Mobile na F-Team_ - [@feliper_dev](https://twitter.com/feliper_dev)
 
 ---
 

@@ -10,14 +10,16 @@
 
 A versão 2.12 do Dart trouxe uma novidade incrível para a línguagem: o `Null Safety`. Uma feature que veio para fortalecer o sistema de tipagens do Dart e facilitar a captura de erros por valores nulos, que é um dos principais motivos de *crashes* causados em aplicativos durante o desenvolvimento.
 
+[Migrando um projeto para o Null Safety](docs/Null_Safety/migrando_null_safety.md)
+
 ## Valores Nullable e Non-Nullable
 
-Com o Null Safety, o Dart ganhou dois novos operadores: o `?` e o `!`. Mais para frente veremos a diferença entre o `?` e o `??`.
+Com o Null Safety, o Dart ganhou novos operadores: o `?`, `??` e o `!`.
 A questão é: para que servem e como devem ser utilizados?
 
 Primeiramente vamos precisar entender o que acontece quando migramos finalmente para o Null Safety. A partir de agora, **o sistema de declaração de variáveis muda e o padrão dos tipos é `Non-Nullable` (não nulos)**.  Ou seja, por padrão, não poderemos mais ter variáveis nulas, pelo menos não da forma como conheciamos.
 
-## Permitindo que uma variável seja nula - Operador '?'
+## Permitindo que uma variável seja nula - Operador **`?`**
 
 Bom, agora que temos por padrão no Dart as variáveis `Non-Nullable`, foi definido um operador para permitirmos que, pelo menos por algum momento, as variáveis possam ter um valor nulo. Esse operador é o `?`. Utilizamos ele dessa forma:
 
@@ -38,7 +40,7 @@ void setUserSettings(Settings settings) {
 
 ```
 
-## Utilizando o `required`
+## Utilizando o **`required`**
 
 Na criação de classes no Dart devemos também pensar um pouco além em algumas situações. Por exemplo: "O que pode ser nulo?", "O que não pode ser nulo?", "O que é obrigatório que todo objeto dessa classe tenha?". Esses são pensamentos que provavelmente sempre tivemos, mas agora temos formas melhores de trabalharmos com eles.
 
@@ -79,15 +81,88 @@ No exemplo acima, o Pokémon **Pikachu** possui evolução, por isso o atributo 
 
 Situação diferente para o Pokémon **Greninja**, que não possui evolução. Logo, o atributo de `evolution` para ele permanece nulo.
 
-## Trabalhando com o operador '!'
+## Trabalhando com o operador **`!`**
+
+Utilizamos esse operador quando temos a certeza de que alguma variável ou atributo de classe que PODE ser nulo(a) **possui um valor não nulo**.
+
+Vamos utilizar um pokémon dos exemplos acima:
+
+```dart
+final pikachu = Pokemon(
+    dexNum: 25,
+    name: "Pikachu",
+    evolution: "Raichu",
+);
+```
+
+Sabemos que `evolution` é um atributo **Nullable**, ou seja, pode ser nulo.
+
+```dart
+String printPikachuInfo() {
+    String info = "${pikachu.name} --> ${pikachu.evolution!}";
+    return info;
+}
+```
+
+Perceba o operador `!` em **`pikachu.evolution!`**. Isso devido ao fato de sabermos que o atributo `evolution` do objeto `pikachu`, que é um atributo que pode ser nulo, possui um valor não nulo.
+
+É comum o Dart exibir avisos na sua IDE para alertar em relação ao uso do operador `!`. Se vier um valor nulo em algum lugar que esteja utilizando este operador, você pode receber o erro de ***null check operator used on a null value***. Por tanto, é preciso ter certeza de que não está recebendo nenhum valor nulo na variável que esteja acompanhada do operador `!`.
+
+Veja só, este erro aconteceria se tentassemos o mesmo para o `grenija`, do exemplo mostrado anteriormente.
+
+```dart
+final greninja = Pokemon(
+    dexNum: 658,
+    name: "Greninja",
+);
+```
+
+Vamos repetir a situação do `pikachu`, mas dessa vez para o `greninja`:
+
+```dart
+String printGreninjaInfo() {
+    String info = "${greninja.name} --> ${greninja.evolution!}";
+    return info;
+}
+```
+
+Neste caso, iríamos nos deparar com o erro ***null check operator used on a null value***, justamente por estarmos utilizando o `!` em um dado que é nulo, pois o atributo `evolution` do objeto `greninja` é nula.
+
+Lembre que o `!` é utilizado para dizermos ao Dart que o valor que está chegando não é nulo. Por isso quando utilizamos no `greninja` temos esse desencontro de informação, pois estamos dizendo ao Dart que um valor nulo (`greninja.evolution`) não é nulo através desse operador. E, por isso, o Dart nos retorna este erro.
+
+## Utilizando o operador **`??`**
+
+A explicação para esse operador é mais simples. Utilizamos ele como uma forma de executarmos algo quando algum valor for nulo.
+
+```dart
+final controller = PokemonController();
+
+Image pokemonSprite = controller.getSprite();
+
+.
+.
+.
+
+Container(
+    decoration: BoxDecoration(
+        image: DecorationImage(
+            image: pokemonSprite.image ?? Image.asset('customSprite.png').image,
+        ),
+    ),
+),
+```
+
+No exemplo acima, estamos informando que caso o **ImageProvider** `image` da variável `pokemonSprite` seja nulo, será utilizado um `Image.asset().image` no lugar.
+
+Neste caso, podemos estar evitando alguma situação de erro ou quebra de tela, tendo uma resposta mais provável de não ser nula.
 
 ## Inicialização tardia: **late**
 
 O `late` é um modificador que permite que o valor de uma variável, inicialmente, seja NULO (`Nullable`).
 
 ```dart
-late TaskController controller;
-/// A variável `controller` da classe [TaskController] está sendo considerada, inicialmente, nula.
+late TaskRepository repository;
+/// A variável `repository` da classe [TaskRepository] está sendo considerada, inicialmente, nula.
 ///
 ```
 
