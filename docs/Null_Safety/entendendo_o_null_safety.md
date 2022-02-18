@@ -104,9 +104,31 @@ String printPikachuInfo() {
 }
 ```
 
-Perceba o operador `!` em **`pikachu.evolution!`**. Isso devido ao fato de sabermos que o atributo `evolution` da variável `pikachu`, que é um atributo que pode ser nulo, possui um valor não nulo.
+Perceba o operador `!` em **`pikachu.evolution!`**. Isso devido ao fato de sabermos que o atributo `evolution` do objeto `pikachu`, que é um atributo que pode ser nulo, possui um valor não nulo.
 
 É comum o Dart exibir avisos na sua IDE para alertar em relação ao uso do operador `!`. Se vier um valor nulo em algum lugar que esteja utilizando este operador, você pode receber o erro de ***null check operator used on a null value***. Por tanto, é preciso ter certeza de que não está recebendo nenhum valor nulo na variável que esteja acompanhada do operador `!`.
+
+Veja só, este erro aconteceria se tentassemos o mesmo para o `grenija`, do exemplo mostrado anteriormente.
+
+```dart
+final greninja = Pokemon(
+    dexNum: 658,
+    name: "Greninja",
+);
+```
+
+Vamos repetir a situação do `pikachu`, mas dessa vez para o `greninja`:
+
+```dart
+String printGreninjaInfo() {
+    String info = "${greninja.name} --> ${greninja.evolution!}";
+    return info;
+}
+```
+
+Neste caso, iríamos nos deparar com o erro ***null check operator used on a null value***, justamente por estarmos utilizando o `!` em um dado que é nulo, pois o atributo `evolution` do objeto `greninja` é nula.
+
+Lembre que o `!` é utilizado para dizermos ao Dart que o valor que está chegando não é nulo. Por isso quando utilizamos no `greninja` temos esse desencontro de informação, pois estamos dizendo ao Dart que um valor nulo (`greninja.evolution`) não é nulo através desse operador. E, por isso, o Dart nos retorna este erro.
 
 ## Utilizando o operador **`??`**
 
@@ -130,7 +152,9 @@ Container(
 ),
 ```
 
-No exemplo acima, estamos informando que caso o getter `image` da variável `pokemonSprite` seja nulo, será utilizado um `Image.asset().image` no lugar.
+No exemplo acima, estamos informando que caso o **ImageProvider** `image` da variável `pokemonSprite` seja nulo, será utilizado um `Image.asset().image` no lugar.
+
+Neste caso, podemos estar evitando alguma situação de erro ou quebra de tela, tendo uma resposta mais provável de não ser nula.
 
 ## Inicialização tardia: **late**
 
