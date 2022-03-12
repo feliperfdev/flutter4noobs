@@ -1,8 +1,12 @@
 # Colocando Imagens em Seus Projetos
 
-## Primeiro: Imagem como Widget e Imagem como `ImageProvider`
+```dart
+/// TODO --> REFAZER ESSE ARTIGO
+```
 
-Umas das formas de trabalharmos com imagens dentro do Flutter é considerando ela como um Widget (classe `Image`) ou apenas como uma classe `ImageProvider`. Por enquanto, você apenas precisa saber que isso existe. Primeiro, vamos entender as fontes que podemos pegar nossas imagens!
+## Entendendo o `Image` e o `ImageProvider`
+
+Primeiro, vamos entender as fontes que podemos pegar nossas imagens!
 
 ### `Assets`
 
