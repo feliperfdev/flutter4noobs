@@ -1,12 +1,19 @@
 # Colocando Imagens em Seus Projetos
 
-## Primeiro: Imagem como Widget e Imagem como `ImageProvider`
+É muito comum vermos em diversos aplicativos imagens sendo utilizadas de diversas formas, seja apenas para ilutrar ou pra interação com alguma funcionalidade do aplicativo.
+<p>Pois bem!
+<p>
+Neste tópico do Flutter4Noobs, iremos aprender a como colocar imagens em seu aplicativo! Sejam elas vindas do seu ambiente local ou até mesmo da internet.
 
-Umas das formas de trabalharmos com imagens dentro do Flutter é considerando ela como um Widget (classe `Image`) ou apenas como uma classe `ImageProvider`. Por enquanto, você apenas precisa saber que isso existe. Primeiro, vamos entender as fontes que podemos pegar nossas imagens!
+---
+
+## Entendendo o `Image`
+
+Primeiro, vamos entender as fontes que podemos pegar nossas imagens!
 
 ### `Assets`
 
-Sim, podemos pegar imagens do próprio diretório em nosso computador. É muito comum criarmos uma pasta separada em nosso projeto e chamarmos de `assets` para guadarmos as imagens.
+Sim, podemos pegar imagens do próprio diretório em nosso computador. É muito comum criarmos uma pasta separada em nosso projeto e chamarmos de `assets` para guadarmos as imagens. Para colocarmos uma imagem dos nossos assets no projeto, basta chamarmos o método `Image.assets()`.
 
 </br>
 
@@ -21,51 +28,11 @@ flutter:
 
 ### `Network`
 
-Assim como podemos utilizar imagens salvas em nosso computador, também podemos pegar da internet! A vantagem é que não precisamos configurar nada no pubspec. Basta chamarmos a função necessária e passar a url da imagem como argumento.
+Assim como podemos utilizar imagens salvas em nosso computador, também podemos pegar da internet! A vantagem é que não precisamos configurar nada no pubspec. Basta chamarmos a função necessária e passar a url da imagem como argumento. A função, no caso, é a própria `Image.network()`.
 
 <br>
 
-Trabalhando com `ImageProvider`:
-
-Dessa classe, duas funções são bem utilizadas: `AssetImage()` e `NetworkImage()`. Ambas recebem String como argumento. Porém, em AssetImage passamos o caminho da imagem, enquanto em NetworkImage passamos a url da imagem.
-
-```dart
-Container(
-    decoration: BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage('../../assets/imagem.png'), // com o BoxDecoration, acessamos o atríbuto image, que nos permite utilizar o DecorationImage. A partir disso, podemos utilizar um outro atríbuto image. Este, portanto, recebe um ImageProvider.
-        ),
-    ),
-);
-```
-
-```dart
-Container(
-    decoration: BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage('https://urldaimagemdesejada.com/imagem.png'),
-        ),
-    ),
-);
-```
-
-```dart
-Center(
-      child: CircleAvatar(
-        radius: 70,
-        backgroundImage: NetworkImage('https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/245/thumb/flutterlogo.png'),
-      backgroundColor: Colors.purpleAccent[700],
-      ),
-    );
-
-// O backgroundImage do CircleAvatar também recebe um ImageProvider
-```
-
-<br>
-
-Travalhando com a classe `Image`:
-
-Diferente do ImageProvider, a classe Image nos diponibiliza os seguintes métodos semelhantes às funções vistas anteriormente: o `Image.asset()` e o `Image.network()`.
+A classe Image nos diponibiliza os seguintes métodos: o `Image.asset()` e o `Image.network()`.
 
 ```dart
 Container(
@@ -75,8 +42,9 @@ Container(
         fit: BoxFit.fill,
     ),
 );
-// Sabemos que o child recebe um Widget. E, como podemos ver, estamos passando a classe Image com o método asset para esse atríbuto.
 ```
+
+No exemplo acima, sabemos que o child recebe um Widget. E, como podemos ver, estamos passando a classe Image com o método asset para esse atríbuto.
 
 ```dart
 Container(
@@ -87,6 +55,28 @@ Container(
     ),
 );
 ```
+
+## Exemplo ilustrativo do uso do Image.network( ):
+
+```dart
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(),
+      body: Center(
+        child: Image.network("https://yt3.ggpht.com/ytc/AKedOLRt1d4p7bPylasq_66BIC8-k3hkyVjJ2JICQITK=s900-c-k-c0x00ffffff-no-rj"),
+      ),
+    );
+  }
+}
+```
+
+<img src='../../assets/screenshots/image_network.png' height=300 width=200>
+<p>
+
+Perceba que também é possível chamar a classe Image, independente do método utilizado, para uma lista de Widgets, por exemplo:
 
 ```dart
 Column(
@@ -107,7 +97,6 @@ Column(
         ),
         Image.asset('../../assets/imagem.png'),
         Image.netowork('https://imagensaletorias.com/img.png'),
-        // Perceba que também é possível chamar a classe Image, independente do método utilizado, para uma lista de Widgets, por exemplo.
 ],
 );
 ```
