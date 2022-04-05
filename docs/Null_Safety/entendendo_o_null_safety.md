@@ -10,8 +10,6 @@
 
 A versão 2.12 do Dart trouxe uma novidade incrível para a línguagem: o `Null Safety`. Uma feature que veio para fortalecer o sistema de tipagens do Dart e facilitar a captura de erros por valores nulos, que é um dos principais motivos de *crashes* causados em aplicativos durante o desenvolvimento.
 
-[Migrando um projeto para o Null Safety](docs/Null_Safety/migrando_null_safety.md)
-
 ## Valores Nullable e Non-Nullable
 
 Com o Null Safety, o Dart ganhou novos operadores: o `?`, `??` e o `!`.
