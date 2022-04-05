@@ -1,7 +1,7 @@
 # Entendendo o Null Safety
 
 <p align='center'>
-<img src='../../assets/nullsafety.png' height=280>
+    <img src='../../assets/nullsafety.png' height=280>
 <p/>
 
 
@@ -24,6 +24,16 @@ Bom, agora que temos por padrão no Dart as variáveis `Non-Nullable`, foi defin
 ```dart
 String? nome;
 ```
+
+<div align='center'>
+    <img src='../../assets/string_null.png' height=130>
+</div>
+
+<p>
+
+> <i>Na imagem acima, vemos o que acontece para um tipo `Nullable`. Ele pode ser o próprio tipo não nulo ou ser apenas nulo.</i>
+
+<p>
 
 Dessa forma estamos permitindo que a variável `nome` possa ser, durante um determinado momento, nula. Ou melhor dizendo, **estamos permitindo que ela seja nula até que seja instanciada / receba algum valor não nulo**.
 
@@ -180,3 +190,8 @@ Future<List<Task>> getAllTasks() async {
 ```
 
 ---
+
+# Referências
+
+- [Understanding null safety](https://dart.dev/null-safety/understanding-null-safety) | Dart
+- [Entendendo o Null Safety](https://dev.to/rrafush/entendendo-o-null-safety-437k) | [Rafaela Martins](https://github.com/rrafush)
