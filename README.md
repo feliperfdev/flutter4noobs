@@ -109,7 +109,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter / Desenvolvedor Mobile na F-Team_ - [@feliper_dev](https://twitter.com/feliper_dev)
+- **Felipe Azevedo Ribeiro** - _Estudante de Engenharia de Computação / Estudando Desenvolvimento Mobile com Flutter_ - [@feliper_dev](https://twitter.com/feliper_dev)
 
 ---
 
