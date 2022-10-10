@@ -62,6 +62,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [O setState( ) e o estado de um Widget](docs/Dando_alguns_passos/Gerencia_de_Estado/O_setState_e_o_estado_de_um_widget.md)
 - [Widgets mais comuns](docs/Dando_alguns_passos/widgets/widgets_mais_comuns.md)
   - [Container](docs/Dando_alguns_passos/widgets/container.md)
+  - [SizedBox](docs/Dando_alguns_passos/widgets/sizedbox.md)
   - [Column & Row](docs/Dando_alguns_passos/widgets/column_row.md)
   - [Stack](docs/Dando_alguns_passos/widgets/stack.md)
   - [Icon e IconButton](docs/Dando_alguns_passos/widgets/icon_e_icon_button.md)
