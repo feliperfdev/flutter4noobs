@@ -114,7 +114,7 @@ String printPikachuInfo() {
 
 Perceba o operador `!` em **`pikachu.evolution!`**. Isso devido ao fato de sabermos que o atributo `evolution` do objeto `pikachu`, que é um atributo que pode ser nulo, possui um valor não nulo.
 
-É comum o Dart exibir avisos na sua IDE para alertar em relação ao uso do operador `!`. Se vier um valor nulo em algum lugar que esteja utilizando este operador, você pode receber o erro de ***null check operator used on a null value***. Por tanto, é preciso ter certeza de que não está recebendo nenhum valor nulo na variável que esteja acompanhada do operador `!`.
+É comum o Dart exibir avisos na sua IDE para alertar em relação ao uso do operador `!`. Se vier um valor nulo em algum lugar que esteja utilizando este operador, você pode receber o erro de ***null check operator used on a null value***. Portanto, é preciso ter certeza de que não está recebendo nenhum valor nulo na variável que esteja acompanhada do operador `!`. Ou, caso queira, pode determinar um valor a ser retornado em caso da variável correr o risco de retornar um valor nulo. Poderíamos, ao invés de escrever: `pikachu.evolution!`, podemos substituir por: `pikachu.evolution ?? "Raichu"`. Assim, caso um valor nulo fosse informado ao campo `evolution`, seria retornado o valor **Raichu**. [Entenda o operado '??' aqui](https://github.com/feliperfdev/flutter4noobs/blob/main/docs/Null_Safety/entendendo_o_null_safety.md#utilizando-o-operador-).
 
 Veja só, este erro aconteceria se tentassemos o mesmo para o `grenija`, do exemplo mostrado anteriormente.
 
@@ -140,12 +140,12 @@ Lembre que o `!` é utilizado para dizermos ao Dart que o valor que está chegan
 
 ## Utilizando o operador **`??`**
 
-A explicação para esse operador é mais simples. Utilizamos ele como uma forma de executarmos algo quando algum valor for nulo.
+A explicação para esse operador é mais simples. Utilizamos ele como uma forma de executarmos algo quando algum valor for nulo. Basicamente, ele é uma forma de determinarmos um valor em caso de a variável
 
 ```dart
 final controller = PokemonController();
 
-Image pokemonSprite = controller.getSprite();
+Image? pokemonSprite = controller.getSprite();
 
 .
 .
