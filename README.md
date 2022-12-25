@@ -87,12 +87,7 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
 - [Contribuir para o Flutter](docs/Comunidade/contribuir_para_o_flutter.md)
 - [Flutter no Brasil](docs/Comunidade/flutter_no_brasil.md)
 
-### Extra
-
-- [Dicas de Flutter para usuários do VSCode](docs/Extra/dicas_de_flutter_para_usuarios_do_vscode.md)
-- [Flutter 2.X](docs/Extra/flutter_2.md)
-- [Flutter - Roadmap Flutterando](https://github.com/Flutterando/roadmap)
-- [Dart/Flutter - Clean Architecture](https://github.com/Flutterando/Clean-Dart)
+### [Extra](./docs/Extra/extra.md)
 
 <!-- CONTRIBUTING -->
 
