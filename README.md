@@ -67,6 +67,8 @@ O objetivo deste 4noobs é trazer uma introdução a essa nova tecnologia que, c
   - [Stack](docs/Dando_alguns_passos/widgets/stack.md)
   - [Icon e IconButton](docs/Dando_alguns_passos/widgets/icon_e_icon_button.md)
   - [CircleAvatar](docs/Dando_alguns_passos/widgets/circle_avatar.md)
+- [Gestures](docs/Dando_alguns_passos/Gestures/gestures.md)
+  - [GestureDetector & InkWell](docs/Dando_alguns_passos/Gestures/gesture_detector_e_inkwell.md)
 - [ListView, GridView e PageView](docs/Dando_alguns_passos/list_grid_page_view.md)
 - [AppBar](docs/Dando_alguns_passos/appbar/appbar_roadMap.md)
   - [Uma simples AppBar](docs/Dando_alguns_passos/appbar/appbar.md)
